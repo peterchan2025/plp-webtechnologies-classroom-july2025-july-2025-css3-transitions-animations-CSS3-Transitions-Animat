@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Animations & Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>CSS + JavaScript Interactive Project </h1>
+
+  <!-- Part 1: CSS Transitions Example -->
+  <button id="hoverBtn">Hover Me</button>
+
+  <!-- Part 3: Trigger Animation with JavaScript -->
+  <h2>Animate a Box</h2>
+  <button id="animateBtn">Animate Box</button>
+  <div id="box"></div>
+
+  <!-- Part 4: Form Validation -->
+  <h2>Signup Form</h2>
+  <form id="signupForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <small class="error" id="nameError"></small><br><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" placeholder="Enter your email">
+    <small class="error" id="emailError"></small><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password">
+    <small class="error" id="passwordError"></small><br><br>
+
+    <button type="submit">Submit</button>
+    <p id="successMessage" class="success"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

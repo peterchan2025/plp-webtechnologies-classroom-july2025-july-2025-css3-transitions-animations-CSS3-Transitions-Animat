@@ -1,0 +1,66 @@
+/* --- General Styles --- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background: #f4f4f9;
+  color: #333;
+}
+
+h1, h2 {
+  color: #222;
+}
+
+/* --- Part 1: CSS Transitions --- */
+button {
+  padding: 12px 24px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #388e3c;
+  transform: scale(1.1);
+}
+
+/* --- Part 1: Keyframe Animations --- */
+.fade-in {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+/* --- Part 3: Box for animation --- */
+#box {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  margin-top: 20px;
+}
+
+/* --- Part 4: Form Validation Styles --- */
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
